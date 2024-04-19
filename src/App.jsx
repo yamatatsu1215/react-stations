@@ -7,8 +7,8 @@ import './App.css'
  */
 export const App = () => {
   return (
-    <div>
-      <h2>Hello, world!</h2>
-    </div>
+    <header>
+      <h1>DOGアプリ</h1>
+    </header>
   )
 }
