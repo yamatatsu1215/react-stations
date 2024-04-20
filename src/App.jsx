@@ -27,7 +27,7 @@ export const App = () => {
   };
   return (
     <div>
-      <header>
+      <header className='header'>
         <h1>DOGアプリ</h1>
       </header>
       <p>犬の画像を表示するサイトです。</p>
