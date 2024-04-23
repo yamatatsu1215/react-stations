@@ -1,5 +1,6 @@
 // @ts-check
 import { useState, useEffect } from "react"
+import BreedsSelect from "./BreedsSelect";
 
 export const DogListContainer = () => {
   // データ一覧を保持するstate
@@ -45,18 +46,10 @@ export const DogListContainer = () => {
     selectfecthDog();
   },[selectedBreed]);
 
-  const handleBreedsChange = (event) => {
-    setSelectedBreed(event.target.value);
-  };
   return (
   <div>
     {/* 犬種の選択 */}
-    <select value={selectedBreed} onChange={handleBreedsChange}>
-      <option value="">Select a breed</option>
-      {dogall.map(breed => (
-        <option value={breed} key={breed}>{breed}</option>
-      ))}
-    </select>
+    <BreedsSelect breeds={dogall} selectedBreed={selectedBreed} setSelectedBreed={setSelectedBreed}/>
     {/* 選択された犬種の画像をリスト表示 */}
     <h2>{selectedBreed}</h2>
     <div>
