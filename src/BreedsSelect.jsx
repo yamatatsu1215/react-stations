@@ -1,6 +1,6 @@
 // @ts-check
 
-export const BreedsSelect = ({ breeds, selectedBreed, setSelectedBreed}) => {
+export const BreedsSelect = ({ breeds, selectedBreed, setSelectedBreed }) => {
   const handleBreedsChange = (event) => {
     setSelectedBreed(event.target.value);
   };

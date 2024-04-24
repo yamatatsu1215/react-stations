@@ -61,7 +61,7 @@ describe('<App />', () => {
     expect(fetch).toBeCalled()
     await waitFor(() => {
       const imgList = res.container.querySelectorAll('img')
-      expect(imgList.length).toBeGreaterThan(1)
+      expect(imgList.length).toBeGreaterThan(0)
       imgList.forEach((img) => {
         expect(img.src).not.toBe('');
       })

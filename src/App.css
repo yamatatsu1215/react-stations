@@ -1,3 +1,12 @@
 header{
     background-color: #f5f5f5;
 }
+
+
+ul{
+    display: flex;
+}
+
+li{
+    columns: auto 3;
+}
